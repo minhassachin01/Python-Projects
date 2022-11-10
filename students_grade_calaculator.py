@@ -1,52 +1,62 @@
 print("STUDENTS GRADES CALCULATOR\n")                       #Using escape to format output
-stu_name = input("Enter Student's Name: ")
-stu_id = input("Enter Student ID: ")
-py_marks = int(input("Enter Student's Marks in Python: "))  #Converting string to int for use in the code
-py_grade = "NA"                     
-py_grade_point = 0.0
-
-if (py_marks > 100 or py_marks < 0):            #Raising a error message if the input marks is more than 100 or negative
-    print("You have entered an Invalid Input, Please check your values & try again.")
-else:
-    if (py_marks >= 94 and py_marks <= 100):
-        py_grade = "A+"
-        py_grade_point = 4.0
-    elif (py_marks >= 87 and py_marks <= 93):
-        py_grade = "A"
-        py_grade_point = 3.7
-    elif (py_marks >= 80 and py_marks <= 86):
-        py_grade = "A-"
-        py_grade_point = 3.5
-    elif (py_marks >= 77 and py_marks <= 79):
-        py_grade = "B+"
-        py_grade_point = 3.2
-    elif (py_marks >= 73 and py_marks <= 76):
-        py_grade = "B"
-        py_grade_point = 3.0
-    elif (py_marks >= 70 and py_marks <= 72):
-        py_grade = "B-"
-        py_grade_point = 2.7
-    elif (py_marks >= 67 and py_marks <= 69):
-        py_grade = "C+"
-        py_grade_point = 2.3
-    elif (py_marks >= 63 and py_marks <= 66):
-        py_grade = "C"
-        py_grade_point = 2.0
-    elif (py_marks >= 60 and py_marks <= 62):
-        py_grade = "C-"
-        py_grade_point = 1.7
-    elif (py_marks >= 50 and py_marks <= 59):
-        py_grade = "D"
-        py_grade_point = 1.0
+print("Enter number of students: ")
+i=int(input())
+n=1
+while n<= i :
+    n=n+1
+    print("Enter the student name: ")
+    name=str(input())
+    print("Enter student id: ")
+    student_id=int(input())
+    print("Total marks in Pyhton course: ")
+    marks=int(input())
+    print("-----Student Information----")
+    print("Name:",name)
+    print("Student Id:",student_id)
+    print("Total Marks:",marks)
+    if marks>=94 and marks<=100:
+        print("Grade: A+")
+        print("Grade point: 4.0")
+        print("--Enter next Student information---")
+    elif marks>=87 and marks<=93:
+        print("Grade: A")
+        print("Grade point: 3.7")
+        print("--Enter next Student information---")
+    elif marks>=80 and marks<=86:
+        print("Grade: A-")
+        print("Grade point: 3.5")
+        print("--Enter next Student information---")
+    elif marks>=77 and marks<=79:
+        print("Grade: B+")
+        print("Grade point: 3.2")
+        print("--Enter next Student information---")
+    elif marks>=73 and marks<=76:
+        print("Grade: B")
+        print("Grade point: 3.0")
+        print("--Enter next Student information---")
+    elif marks>=70 and marks<=72:
+        print("Grade: B-")
+        print("Grade point: 2.7")
+        print("--Enter next Student information---")
+    elif marks>=67 and marks<=69:
+        print("Grade: C+")
+        print("Grade point: 2.3")
+        print("--Enter next Student information---")
+    elif marks>=63 and marks<=66:
+        print("Grade: C")
+        print("Grade point: 2.0")
+        print("--Enter next Student information---")
+    elif marks>=60 and marks<=62:
+        print("Grade: C-")
+        print("Grade point: 1.7")
+        print("--Enter next Student information---")
+    elif marks>=50 and marks<=59:
+        print("Grade: D")
+        print("Grade point: 1.0")
+        print("--Enter next Student information---")
+    elif marks>=0 and marks<=49:
+        print("Grade: F")
+        print("Grade point: 0.0")
+        print("--Enter next Student information---")
     else:
-        py_grade = "F"
-        py_grade_point = 0.0
-
-    print("\nYour Python Result is as Follows:-")       #printing students data
-    print("Students Name: " + stu_name)
-    print("Student ID: " + stu_id)
-    print("Total Marks: " + str(py_marks))
-    print("Grade: " + py_grade)
-    print("Grade Point: " + str(py_grade_point))
-    
-        
+        print("Enter marks between 0 to 100")
